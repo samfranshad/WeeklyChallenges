@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChallengesWithTestsMark8
 {
@@ -23,6 +24,7 @@ namespace ChallengesWithTestsMark8
         public char GetFirstLetterOfString(string val)
         {
             throw new NotImplementedException();
+
         }
 
         public char GetLastLetterOfString(string val)
@@ -47,7 +49,10 @@ namespace ChallengesWithTestsMark8
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-            throw new NotImplementedException();
+            foreach (string word in words)
+            {
+                word.ToUpper();
+            }
         }
     }
 }
